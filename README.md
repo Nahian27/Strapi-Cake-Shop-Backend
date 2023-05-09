@@ -1,0 +1,2 @@
+# Strapi Cake Shop Backend
+ 
