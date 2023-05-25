@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "design_types",
+  "info": {
+    "singularName": "design-type",
+    "pluralName": "design-types",
+    "displayName": "Design Type"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "designs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::design.design",
+      "mappedBy": "design_types"
+    }
+  }
+}
